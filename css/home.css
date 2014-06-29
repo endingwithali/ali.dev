@@ -1,21 +1,40 @@
-html {
-  height: 100%;
+ul
+{
+	list-style: none;
 }
 
-header{
-	width:100%;
-	max-width: 1000px;
-	position:relative;
-	margin-left: auto;
-    margin-right: auto;
+/*~~~~~~~~~
+Header CSS
+~~~~~~~~~~*/
+
+#logo
+{
+	margin: 0 auto;
+  	padding: 5px 0 0 0;
+ 	width: 100%;
+ 	text-align: center;
 }
 
-.h1
+/*Header naviation*/
+header nav 
+{
+	list-style: none;
+	max-width: 100%;
+	margin: 0 auto;
+}
+header nav ul
 {
 	text-align: center;
-	font-size: 24px;
+	margin:2.5%;
 }
-.nav
+.fadeNav
 {
-	text-align: center;
+	display:inline-block; /*Make it such that images are in line*/
+	margin:0 2.5%;
+	position: relative;
 }
+
+
+/*~~~~~~~~~
+Header CSS
+~~~~~~~~~~*/
