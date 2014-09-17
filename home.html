@@ -1,36 +1,82 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="uft-8">
-		<title>Ali Finkelstein</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/home.css">
+		<title> Ali Finkelstein </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Cabin' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	</head>
-
 	<body>
+			<header>
+				<div class="hiddenLogo">
+				<h1 id="name">Ali Finkelstein</h1>
+				<h2>Under Construction</h2>
 
-		<header>
-			<h1 id="logo"> Ali Finkelstein</h1>
-			<nav>
-				<ul>
-					<li class="fadeNav"><a href="home.html"><div id="selected">Home</div></a></li>
-					<li class="fadeNav"><a href="code.html">Code</a></li>
-					<li class="fadeNav">Design</li>
-					<li class="fadeNav">Email</li>
-				</ul>	
-			</nav>
-		</header>
-  
-  		<section>
-  			Hi I'm Ali. 
+						</header>
+			<section>
+				<nav class="hiddenBottom">
+					<ul>
+						<!--icon credits to: http://www.designrazzi.net/2014/social-media-buttons/ -->
+						<li> <a href="https://github.com/asfink"> 
+							<i class="fa fa-github-alt icon-2x"></i> 
 
-  			Connect with me:
-  		</section>
+<!-- 							<img class="recolor" src="assets/github@2x.png"> -->
+						</a> </li>
+						<li> <a href="https://twitter.com/asafink_">
+								<i class="fa fa-twitter icon-2x"></i> 
 
-  		<footer>
-  		</footer>
-		<script src="js/jquery.js"></script>  		
-		<script src="js/navigation.js"></script>
-  	</body>
+<!-- 							<img class="recolor" src="assets/twitter@2x.png"> -->
+						</a> </li>
+						<li><a href="mailto:ali@finkelstein.us?subject=Let's%20Talk&amp;body=Hi%20Ali-%0AI%20found%20visited%20your%20website%20and%20I'd%20like%20to%20talk%20to%20you!">
+							<i class="fa fa-envelope-o icon-2x"></i>
+<!-- 							<img class="recolor" src="assets/mail@2x.png"> -->
+						</a> </li>
+						<li><a href="https://www.linkedin.com/pub/ali-finkelstein/80/50/625"> 
+							<i class="fa fa-linkedin icon-2x"></i>
+<!-- 							<img class="recolor" src="assets/linked-in@2x.png"> -->
+						</a> </li>
+					</ul>
+				</nav>
+			</div>
+			</section>
+			<footer>
+			</footer>
+			<script type="text/javascript" src='js/jquery.js'></script>
+			<script type="text/javascript">
+				// $(document).ready(function() {
+				// 	$('div.hiddenLogo').fadeIn('slow', function(){
+				// 		$('.hiddenBottom').fadeIn().removeClass('hidden');
+				// 	}).removeClass('hidden').done();
+				// });
 
+
+// .hiddenLogo
+// {
+// 	display: none;
+// }
+// .hiddenBottom
+// {
+// 	display:none;
+// }
+				$(document).ready(function() {
+
+					$('.recolor').each(function() {
+					    
+					    var std = $(this).attr("src");
+					    var hover = std.replace(".png", "C.png");
+					    $(this).wrap('<div />').clone().insertAfter(this).attr('src', hover).removeClass('fadein').siblings().css({
+					        position:'absolute'
+					    });
+					    $(this).mouseenter(function() {
+					        $(this).stop().fadeTo(200, 0);
+					    }).mouseleave(function() {
+					        $(this).stop().fadeTo(200, 1);
+
+					    });
+					});
+				});
+
+			</script>
+	</body>
 </html>
