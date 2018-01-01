@@ -1,0 +1,6 @@
+how to switch the theme in an existing jekyll installation
+https://stackoverflow.com/questions/31327045/switch-theme-in-an-existing-jekyll-installation#37186333
+
+how to set up a blog w/ jekyll and github pages (PART 1)
+http://anandmanisankar.com/posts/set-up-blog-jekyll-github-pages/
+
