@@ -1,0 +1,303 @@
+:root{
+  	--white: #FFFFFF;
+  	--licorice: #000000;
+  	--blue-green: #2EC4B6;
+  	--redical: #FF3366;
+  	--florange: #E4572E;
+  	--gray: #D2CECD;
+  	--window: #3A6EA5;
+}
+
+body{
+	margin:0;
+	overflow: hidden;
+	background-color: var(--window);
+
+}
+
+.main{
+	width:100%;
+	height:100vh;
+	z-index: 400;
+	top:0;
+	left:0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+
+#home___mainbox{
+	background-color: var(--white);
+	height:70%;
+	width:50%;
+	min-width: 500px;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1px;
+	justify-content: space-between;
+	margin-top: auto;
+	margin-bottom: auto;
+	box-shadow: 10px 10px 5px #0A3B76;
+}
+
+
+
+/*https://iros.github.io/patternfills/sample_css.html*/
+#home___tool-bar-name{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid;
+}
+
+#home___namebar{
+	font-size: 3.25vh;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	white-space: nowrap;
+	font-family: 'VT323', monospace;
+	padding-bottom: 1px;
+	padding-top:1px;
+
+}
+.home___namebar-fill{
+	margin: 5px;
+	width:100%;
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuX29rRmoiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg5MCkiPjxsaW5lIHgxPSIwIiB5PSIwIiB4Mj0iMCIgeTI9IjQiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PC9wYXR0ZXJuPjwvZGVmcz4gPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuX29rRmopIiBvcGFjaXR5PSIxIi8+PC9zdmc+');
+	background-repeat: repeat;
+ }
+
+#home___tool-bar{
+	display:flex;
+	flex-direction: column;
+	
+	border-bottom: double;
+	padding-bottom: 1px;
+	border-width: thick;
+}
+
+#home___tool-bar___entries{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 3vh;
+	margin-left:1px;
+}
+
+#home___tool-bar-tiles{
+	height: 3vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top:1px;
+}
+.home___tool-bar__entry{
+	font-family: 'VT323', monospace;
+	font-size: 3vh;
+	background-color: white;
+	color:black;
+}
+
+.home___tool-bar__entry:hover{
+	background-color: black;
+	color:white;
+
+}
+
+
+.home___tool-bar__entry-text{
+	margin:0;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	line-height: 3vh;
+}
+
+.home___tool-bar__exit{
+	line-height: 2.5vh;
+}
+
+#home__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 1vh;
+	margin-right:1vh;
+	height:100%;
+}
+
+.output {
+  font-family: 'IBM Plex Mono', monospace;
+  color:var(--licorice);
+  margin-top:0;
+  margin-bottom: 0;
+}
+.output > h1{
+	font-size: 2.5vh;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+  	content:'';
+  	display:inline-block;
+  	margin-left:3px;
+  	background-color:pink;
+  	animation-name:blink;
+  	animation-duration:0.5s;
+  	animation-iteration-count: infinite;
+    line-height: 1vh;
+    vertical-align: middle;
+
+}
+
+h1.cursor::after {
+  height:2.6vh;
+  width:1vh;
+  line-height: 2.6vh;
+}
+
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.home__typewriter{
+}
+
+
+#home___text{
+}
+
+.home___mainbox-text{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 2.25vh;
+	color: var(--licorice);
+}
+
+#home__blog{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.home___tool-bar-button{
+	text-decoration: none;
+	text-decoration-color: black;
+	color:black;
+}
+#home__blog-button{
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 0;
+}
+
+#home__blog-button:active {
+  top: 2px;
+}
+
+
+#home___image{
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	height:25vh;
+	width:35vh;
+	object-position: 0 15%;
+}
+
+/*https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile*/
+@media only screen and (max-device-width: 480px){
+	#home___mainbox{
+		background-color: var(--white);
+		height:70%;
+		width:95%;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		padding-top: 1px;
+		justify-content: space-between;
+		margin-top: auto;
+		margin-bottom: auto;
+		box-shadow: 20px 20px 10px #0A3B76;
+	}
+
+	.output > h1{
+		font-size: 2.5vh;
+	}
+
+	.home___mainbox-text{
+		font-size: 2vh;
+	}
+
+	#home___namebar{
+		/*width:100%;*/
+		font-size: 3.25vh;
+	}
+	.home___tool-bar__entry{
+		font-size:2vh;
+	}
+}
+
+
+
+
+@media only screen and (min-width:1900px){
+	#home___mainbox{
+		height:50%;
+		width:50%;
+		min-width: 500px;
+		max-width: 800px;
+	}
+	.output > h1{
+		font-size: 1.75vh;
+	}
+	.home___mainbox-text{
+		font-size: 1.5vh;
+	}
+	#home___namebar{
+		/*width:100%;*/
+		font-size: 2.25vh;
+	}
+	.home___tool-bar__entry{
+		font-size:2vh;
+	}
+	.home___tool-bar__entry-text{
+		line-height: 2vh;
+	}
+	#home___tool-bar___entries{
+		height: 2vh;
+	}
+	#home___tool-bar-tiles{
+		height: 2vh;
+	}
+	#home___image{
+		min-height:15vh;
+		width:30vh;
+	}
+
+}
+
+
+
+
+/*
+
+https://www.coffee-break-designs.com/labs/svg_stripe_generator/
+https://iros.github.io/patternfills/sample_css.html
+
+font-family: 'Press Start 2P', cursive;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'VT323', monospace;
+*/
