@@ -1,110 +1,98 @@
-
-<html>
-	<head>
-		<title> Ali Finkelstein </title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
-		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-	</head>
-
-	<body>
-			<header>
-				<div class="hiddenLogo">
-				<h1 id="name">Ali Finkelstein</h1>
-				<h2> Full stack engineering looking for her next great adventure. </h2>
-	<h3> 2017 - MIT - Master of Engineering in computer science and electrical engineering</h3>
-						<h4> Concentration in computer systems </h4>
-					</br>
-	 <h3 style="font-weight: 700;"> 2016 - MIT - Bachelor of Science in computer science and electrical engineering </h3>
-						<h4> Minor in comparative media studies </h4>
-
-				<!-- <h4> I studied computer science and electrical engineering at MIT, where I received my Master of Engineering (concentration in computer systems) in 2017 and Bachelor of Science degree with a minor in comparative media studies in 2016.  </h4> -->
-<!-- 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="moreAboutMeModal">more about me</button>
-				Button trigger modal
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-				Launch demo modal
-				</button> -->
-
-			</header>
-			<section>
-				<nav class="hiddenBottom">
-					<ul>
-						<!--icon credits to: http:n/www.designrazzi.net/2014/social-media-buttons/ -->
-						<li> <a href="https://github.com/asfink" target="_blank"> 
-							<i class="fa fa-github-alt icon-2x"></i> 
-
-<!-- 							<img class="recolor" src="assets/github@2x.png"> -->
-						</a> </li>
-						<li> <a href="https://twitter.com/asafink_" target="_blank">
-								<i class="fa fa-twitter icon-2x"></i> 
-
-<!-- 							<img class="recolor" src="assets/twitter@2x.png"> -->
-						</a> </li>
-						<li><a href="mailto:ali@finkelstein.us?subject=Let's%20Talk&amp;body=Hi%20Ali-%0AI%20found%20visited%20your%20website%20and%20I'd%20like%20to%20talk%20to%20you!">
-							<i class="fa fa-envelope-o icon-2x"></i>
-<!-- 							<img class="recolor" src="assets/mail@2x.png"> -->
-						</a> </li>
-						<li><a href="https://www.linkedin.com/pub/ali-finkelstein/80/50/625" target="_blank"> 
-							<i class="fa fa-linkedin icon-2x"></i>
-<!-- 							<img class="recolor" src="assets/linked-in@2x.png"> -->
-						</a> </li>
-						<li><a href="https://www.dropbox.com/s/6u41h059o37tcc2/resumeContent.pdf?dl=0" target="_blank">
-							<i class="fa fa-file-excel-o"></i>
-						</a></li>
-					</ul>
-				</nav>
-			</div>
-			</section>
-
-			<!-- <section>
-				<div class="projectInfo">
-					<div class="photo">
-						photo
-					</div>
-					<div class="info">
-						info
-					</div>
-				</div>
-			</section> -->
-			<footer>
-			</footer>
-
-			<script type="text/javascript" src='js/jquery.js'></script>
-			<script type="text/javascript">
-				// $(document).ready(function() {
-				// 	$('div.hiddenLogo').fadeIn('slow', function(){
-				// 		$('.hiddenBottom').fadeIn().removeClass('hidden');
-				// 	}).removeClass('hidden').done();
-				// });
+<!-- 
+CREDITS WHERE CREDIT IS DUE:
+Thank you Panagiotis Bitos for publishing the VHS background code on codepen- I used it as the basis for my background :)
+https://codepen.io/pbitos/pen/zypwVr 
 
 
-// .hiddenLogo
-// {
-// 	display: none;
-// }
-// .hiddenBottom
-// {
-// 	display:none;
-// }
-				$(document).ready(function() {
+Thank you David Carr for publishing the Multiline typewriter effect - I used this as the basis for my typewriter animation :)
+https://codepen.io/daviddcarr/pen/XVyQMM
+-->
 
-					$('.recolor').each(function() {
-					    
-					    var std = $(this).attr("src");
-					    var hover = std.replace(".png", "C.png");
-					    $(this).wrap('<div />').clone().insertAfter(this).attr('src', hover).removeClass('fadein').siblings().css({
-					        position:'absolute'
-					    });
-					    $(this).mouseenter(function() {
-					        $(this).stop().fadeTo(200, 0);
-					    }).mouseleave(function() {
-					        $(this).stop().fadeTo(200, 1);
+<!DOCTYPE html>
+<html lang="en" >
 
-					    });
-					});
-				});
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Press+Start+2P|VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/home.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+</head>
 
-			</script>
-	</body>
+<body>
+  <!-- <div class="lines"></div>
+  <div class="background">
+      <div class="noise"></div>
+      <div class="vhs">Ali Finkelstein</div>
+      <div class="time"><span id="time"></span></div>
+      <div class="counter">REC <label id="minutes">00</label>:<label id="seconds">00</label></div>
+  </div> -->
+  <div class="main">
+  <!-- <h1 id="home___name">
+    Ali Finkelstein
+  </h1>
+  <h2 id="home___tagline">
+    Co Founder @ ERinfo
+  </h2> -->
+  <div id="home___mainbox">
+
+    <div id="home___tool-bar">
+      <div id="home___tool-bar-name">
+        <div class="home___namebar-fill"></div>
+        <div id="home___namebar">
+            Ali Finkelstein
+        </div>
+        <div class="home___namebar-fill"></div>
+        <!-- <div class="home___tool-bar__exit">
+            <svg width="1.5vh" height="1.5vh">
+                <rect width="1.5vh" height="1.5vh" x="0" y="0"  style="stroke-width:1px;stroke:rgb(0,0,0);fill:none;" />
+              </svg>
+        </div>   -->
+      </div>
+    <div id="home___tool-bar-tiles">
+        <div id="home___tool-bar___entries">
+          <a class="home___tool-bar-button" href="https://twitter.com/endingwithali"> <div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">Twitter</p></div></a>
+          <a class="home___tool-bar-button" href="https://github.com/asfink"><div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">GitHub</p></div></a>
+          <a class="home___tool-bar-button" href="https://www.producthunt.com/@asafink"><div class="home___tool-bar__entry" ><p class="home___tool-bar__entry-text">Product Hunt</p></div></a>
+          <a class="home___tool-bar-button" href="https://www.linkedin.com/in/ali-finkelstein-62505080/"><div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">LinkedIn</p></div></a>
+        </div>
+        <!-- <div class="home___tool-bar__exit">
+            <svg width="2.5vh" height="2.5vh">
+                <rect width="1.25vh" height="1.25vh" x="22.5%" y="22.5%"  style="stroke-width:1px;stroke:rgb(0,0,0);fill:none;" />
+              </svg>
+        </div>   -->
+      </div>
+    </div>
+    <div id="home__content">
+    <div class="home__typewriter">
+        <div class="output" id="output">
+          <h1 class="cursor" style="margin-top: 0px; margin-bottom:0px;"></h1>
+        </div>
+        <div id="home___text">
+            <p class="home___mainbox-text">Hi! I'm Ali. I currently live in Miami, looking for my next big adventure. I co-founded ERinfo.me and Hypothetical Capital.</p>
+            <p class="home___mainbox-text">I'm actively looking for a new role, so please reach out!</p>
+            <p class="home___mainbox-text">Best way to contact me is via Twitter DM - let's chat :)</p>
+
+          </div>
+      </div>
+    <div id="home___image-holder">
+      <img id="home___image" src="assets/self.jpg" alt="A glitched picture of Ali's face">
+
+    </div>
+    <div id="home__blog">
+        <div id="home__blog-button">
+            <a class="home___tool-bar-button" href="https://asfink.github.io"> <div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">I write things sometimes</p></div></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
 </html>
+
