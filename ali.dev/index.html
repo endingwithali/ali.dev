@@ -1,0 +1,101 @@
+<!-- 
+Thank you David Carr for publishing the Multiline typewriter effect - I used this as the basis for my typewriter animation :)
+https://codepen.io/daviddcarr/pen/XVyQMM
+-->
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Ali Finkelstein</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Press+Start+2P|VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/home.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154710519-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154710519-1');
+  </script>
+
+</head>
+
+<body>
+  <!-- <div class="lines"></div>
+  <div class="background">
+      <div class="noise"></div>
+      <div class="vhs">Ali Finkelstein</div>
+      <div class="time"><span id="time"></span></div>
+      <div class="counter">REC <label id="minutes">00</label>:<label id="seconds">00</label></div>
+  </div> -->
+  <div class="main">
+  <!-- <h1 id="home___name">
+    Ali Finkelstein
+  </h1>
+  <h2 id="home___tagline">
+    Co Founder @ ERinfo
+  </h2> -->
+  <div id="home___mainbox">
+
+    <div id="home___tool-bar">
+      <div id="home___tool-bar-name">
+        <div class="home___namebar-fill"></div>
+        <div id="home___namebar">
+            <a href="/" style="text-decoration: none; color: inherit;"> Ali Finkelstein</a>
+        </div>
+        <div class="home___namebar-fill"></div>
+        <!-- <div class="home___tool-bar__exit">
+            <svg width="1.5vh" height="1.5vh">
+                <rect width="1.5vh" height="1.5vh" x="0" y="0"  style="stroke-width:1px;stroke:rgb(0,0,0);fill:none;" />
+              </svg>
+        </div>   -->
+      </div>
+    <div id="home___tool-bar-tiles">
+        <div id="home___tool-bar___entries">
+          <a class="home___tool-bar-button" href="https://twitter.com/endingwithali"> <div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">Twitter</p></div></a>
+          <a class="home___tool-bar-button" href="https://github.com/endingwithali"><div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">GitHub</p></div></a>
+          <a class="home___tool-bar-button" href="https://www.producthunt.com/@endingwithali"><div class="home___tool-bar__entry" ><p class="home___tool-bar__entry-text">Product Hunt</p></div></a>
+          <a class="home___tool-bar-button" href="https://www.linkedin.com/in/ali-finkelstein/"><div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">LinkedIn</p></div></a>
+          <!-- <a class="home___tool-bar-button" href="https://stackoverflow.com/users/1496526/endingwithali"><div class="home___tool-bar__entry"><p class="home___tool-bar__entry-text">Stack Overflow</p></div></a> -->
+        </div>
+        <!-- <div class="home___tool-bar__exit">
+            <svg width="2.5vh" height="2.5vh">
+                <rect width="1.25vh" height="1.25vh" x="22.5%" y="22.5%"  style="stroke-width:1px;stroke:rgb(0,0,0);fill:none;" />
+              </svg>
+        </div>   -->
+      </div>
+    </div>
+    <div class="home__content">
+    <div class="home__typewriter">
+        <div class="output" id="output">
+          <h1 class="cursor" style="margin-top: 0px; margin-bottom:0px;"></h1>
+        </div>
+        <div id="home___text">
+            <p class="home___mainbox-text">Hi! I'm Ali. I'm currently nomadic somewhere in America. I cofounded ERinfo.me and Hypothetical Capital.</p>
+            <p class="home___mainbox-text">Best way to contact me is via Twitter DM - let's chat :)</p>
+
+          </div>
+      </div>
+    <div id="home___image-holder">
+      <img id="home___image" src="assets/self.jpg" alt="A glitched picture of Ali's face">
+
+    </div>
+    <div id="home__links">
+        <p class="home___link-text"><a href="https://blog.ali.dev">I write things sometimes</a></p>
+        <p class="home___link-text"><a href="/about.html">More about me</a></p>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
+
