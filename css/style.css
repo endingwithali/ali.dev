@@ -118,14 +118,16 @@ body{
 	line-height: 2.5vh;
 }
 
-#home__content{
+.home__content{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	margin-left: 1vh;
 	margin-right:1vh;
 	height:100%;
+	overflow-y: scroll;
 }
+
 
 .output {
   font-family: 'IBM Plex Mono', monospace;
@@ -182,29 +184,24 @@ h1.cursor::after {
 
 .home___mainbox-text{
 	font-family: 'IBM Plex Mono', monospace;
-	font-size: 2.25vh;
+	font-size: 2vh;
 	color: var(--licorice);
 }
 
-#home__blog{
-	display: flex;
-	justify-content: flex-end;
-}
 
 .home___tool-bar-button{
 	text-decoration: none;
 	text-decoration-color: black;
 	color:black;
 }
-#home__blog-button{
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 0;
+
+.home___link-text{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 2vh;
+	color: var(--licorice);
+	margin-top:1px;
 }
 
-#home__blog-button:active {
-  top: 2px;
-}
 
 
 #home___image{
@@ -220,7 +217,7 @@ h1.cursor::after {
 @media only screen and (max-device-width: 480px){
 	#home___mainbox{
 		background-color: var(--white);
-		height:70%;
+		height:80%;
 		width:95%;
 		margin-right: auto;
 		margin-left: auto;
@@ -246,6 +243,10 @@ h1.cursor::after {
 	}
 	.home___tool-bar__entry{
 		font-size:2vh;
+	}
+
+	.aboutme{
+		display: block;
 	}
 }
 
