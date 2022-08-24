@@ -210,7 +210,7 @@ h1.cursor::after {
 	object-fit: cover;
 	height:20vh;
 	width:35vh;
-	object-position: 0 15%;
+	/* object-position: 0 15%; */
 }
 
 /*https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile*/
