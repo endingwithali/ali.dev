@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var textArray = [
     "MIT Grad", 
-    "Software Engineer",
+    "Dev Rel Engineer",
     "Startup Obsessed",
     "ERinfo Cofounder",
-    "Amateur Cook",
+    "Twitch Streamer",
     "YouTube Junkie",
     "Meme Queen Supreme"
   ]
